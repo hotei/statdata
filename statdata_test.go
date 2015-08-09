@@ -18,7 +18,8 @@ func Test001(t *testing.T) {
 	fmt.Printf("Final result follows:\n")
 	ct.Dump()
 	// compare to stdev value calculated by Sharp EL-533 calculator
-	if AbsF64((ct.StdDev() - .829156197)) > 0.000001 {
+	el533 := .829156197
+	if AbsF64((ct.StdDev() - el533)) > 0.000001 {
 		t.Fatalf("Test001 failed at StdDev()\n")
 	}
 }

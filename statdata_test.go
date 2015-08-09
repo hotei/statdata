@@ -8,7 +8,7 @@ import (
 )
 
 func Test001(t *testing.T) {
-	var ct StatDat = StatDat{Name:"MyStats"}
+	var ct StatDat = StatDat{Name: "MyStats"}
 
 	ct.Stat(1.0)
 	ct.Stat(2.0)
@@ -22,4 +22,3 @@ func Test001(t *testing.T) {
 		t.Fatalf("Test001 failed at StdDev()\n")
 	}
 }
-
